@@ -1,6 +1,8 @@
-for i in range(2, 16):
-    print(f"{i}: {str(bin(i))[2:]}")
+# A challenge from a friend, "make a function that multiplies a given integer by
+# 217. You may not use arithmetic operators * / % + -"
 
+# I didn't know if there was some clever way to do it so I just made code to mulitply
+# any two numbers in general
 
 def add_bit(x, y, bit, carry):
     """Adds a single bit of a number, for example, 0b_1_000 and 0b_0_000 (the fourth bit)"""
