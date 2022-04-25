@@ -2,3 +2,4 @@ aasdf
 asdf ast test 1
 edit then commit then try to squash two pushed commits
 test test
+test 2 test 2
