@@ -4,14 +4,18 @@ import pytz
 
 pacific_tz = pytz.timezone('America/Los_Angeles')
 fixed_timezone = timezone(timedelta(hours=-8))
-offset = 16 * 60 * 60 * 1000  # move all timestamps by 16 hours (came back from Japan to US)
+japan_to_us_offset = 16 * 60 * 60 * 1000  # move all timestamps by 16 hours (came back from Japan to US)
+us_to_japan_offset = -japan_to_us_offset
+offset = us_to_japan_offset
 offset = offset + 1  #  i was getting a UNIQUE constraint failed: revlog.id error, so this makes it work
-lower_range = 1722750615000  # august 3rd
-upper_range = 1729013415000  # october 17th
+# lower_range = 1722750615000  # august 3rd
+# upper_range = 1729013415000  # october 17th
+lower_range = 0
+upper_range = 99999999999999
 
 # Path to your Anki collection database file (modify the path as needed)
-db_path = 'C:\\Users\\Ryry013\\AppData\\Roaming\\Anki2\\Ryan\\collection.anki2'
-backup = 'C:\\Users\\Ryry013\\AppData\\Roaming\\Anki2\\Ryan\\collection_backup.anki2'
+db_path = 'C:\\Users\\ryry0\\AppData\\Roaming\\Anki2\\1) Ryan\\collection.anki2'
+backup = 'C:\\Users\\ryry0\\AppData\\Roaming\\Anki2\\1) Ryan\\collection_backup.anki2'
 
 # first, overwrite the main database with the backup
 if False:
