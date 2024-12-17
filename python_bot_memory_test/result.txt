@@ -1,0 +1,318 @@
+state.py traceback stacks:
+Memory allocations for discord\state.py (line 612):
+13888.56 KiB - Before defining bot
+
+
+[ Top 20 differences ]
+..\discord\state.py:258                 : size=6357 B (+6357 B), count=62 (+62), average=103 B
+..\discord\state.py:276                 : size=2888 B (+2888 B), count=2 (+2), average=1444 B
+..\discord\state.py:251                 : size=824 B (+824 B), count=2 (+2), average=412 B
+..\discord\state.py:256                 : size=536 B (+536 B), count=1 (+1), average=536 B
+..\discord\state.py:190                 : size=464 B (+464 B), count=1 (+1), average=464 B
+..\discord\state.py:282                 : size=456 B (+456 B), count=2 (+2), average=228 B
+..\discord\state.py:330                 : size=416 B (+416 B), count=1 (+1), average=416 B
+..\discord\state.py:260                 : size=416 B (+416 B), count=1 (+1), average=416 B
+..\discord\state.py:237                 : size=416 B (+416 B), count=1 (+1), average=416 B
+..\discord\state.py:287                 : size=128 B (+128 B), count=1 (+1), average=128 B
+..\discord\state.py:291                 : size=96 B (+96 B), count=1 (+1), average=96 B
+..\discord\state.py:289                 : size=64 B (+64 B), count=1 (+1), average=64 B
+..\discord\state.py:284                 : size=64 B (+64 B), count=1 (+1), average=64 B
+..\discord\state.py:280                 : size=64 B (+64 B), count=1 (+1), average=64 B
+..\discord\state.py:279                 : size=64 B (+64 B), count=1 (+1), average=64 B
+..\discord\state.py:278                 : size=64 B (+64 B), count=1 (+1), average=64 B
+..\discord\state.py:255                 : size=64 B (+64 B), count=1 (+1), average=64 B
+..\discord\state.py:203                 : size=64 B (+64 B), count=1 (+1), average=64 B
+..\discord\state.py:179                 : size=64 B (+64 B), count=1 (+1), average=64 B
+..\discord\state.py:277                 : size=48 B (+48 B), count=1 (+1), average=48 B
+
+state.py traceback stacks:
+Memory allocations for discord\state.py (line 612):
+14188.26 KiB - Bot is defined
+
+
+[ Top 20 differences ]
+..\discord\state.py:163                 : size=6327 B (-168 B), count=13 (-1), average=487 B
+
+state.py traceback stacks:
+Memory allocations for discord\state.py (line 612):
+14320.52 KiB - Bot instance created
+
+
+[2024-12-17 12:45:24] [INFO    ] discord.client: logging in using static token
+[2024-12-17 12:45:25] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 5abd57bca8063345ac78dc5563151db6).
+Logged in as memory_test#6371 (ID: 1318379376890347562)
+[ Top 20 differences ]
+..\discord\state.py:276                 : size=0 B (-2888 B), count=0 (-2)
+..\discord\state.py:569                 : size=2208 B (+2208 B), count=1 (+1), average=2208 B
+..\discord\state.py:1342                : size=1080 B (+1080 B), count=3 (+3), average=360 B
+..\discord\state.py:604                 : size=920 B (+920 B), count=2 (+2), average=460 B
+..\discord\state.py:484                 : size=832 B (+832 B), count=2 (+2), average=416 B
+..\discord\state.py:1166                : size=632 B (+632 B), count=1 (+1), average=632 B
+..\discord\state.py:358                 : size=616 B (+616 B), count=3 (+3), average=205 B
+..\discord\state.py:588                 : size=600 B (+600 B), count=2 (+2), average=300 B
+..\discord\state.py:321                 : size=600 B (+600 B), count=2 (+2), average=300 B
+..\discord\state.py:291                 : size=624 B (+528 B), count=2 (+1), average=312 B
+..\discord\state.py:558                 : size=512 B (+512 B), count=1 (+1), average=512 B
+..\discord\state.py:1191                : size=488 B (+488 B), count=1 (+1), average=488 B
+..\discord\state.py:577                 : size=480 B (+480 B), count=1 (+1), average=480 B
+..\discord\state.py:541                 : size=480 B (+480 B), count=1 (+1), average=480 B
+..\discord\state.py:511                 : size=480 B (+480 B), count=1 (+1), average=480 B
+..\discord\state.py:1355                : size=472 B (+472 B), count=1 (+1), average=472 B
+..\discord\state.py:578                 : size=472 B (+472 B), count=1 (+1), average=472 B
+..\discord\state.py:546                 : size=464 B (+464 B), count=1 (+1), average=464 B
+..\discord\state.py:190                 : size=0 B (-464 B), count=0 (-1)
+..\discord\state.py:1230                : size=456 B (+456 B), count=1 (+1), average=456 B
+
+state.py traceback stacks:
+Memory allocations for discord\state.py (line 612):
+15152.71 KiB - Bot is ready
+
+
+[ Top 20 differences ]
+..\discord\message.py:1687              : size=2608 B (+2608 B), count=10 (+10), average=261 B
+..\discord\state.py:612                 : size=872 B (+872 B), count=2 (+2), average=436 B
+..\discord\message.py:1627              : size=504 B (+504 B), count=2 (+2), average=252 B
+..\discord\message.py:1614              : size=504 B (+504 B), count=2 (+2), average=252 B
+..\discord\message.py:1613              : size=504 B (+504 B), count=2 (+2), average=252 B
+..\discord\message.py:1615              : size=488 B (+488 B), count=2 (+2), average=244 B
+..\discord\state.py:610                 : size=488 B (+488 B), count=1 (+1), average=488 B
+..\discord\message.py:1811              : size=480 B (+480 B), count=1 (+1), average=480 B
+..\discord\state.py:613                 : size=472 B (+472 B), count=1 (+1), average=472 B
+..\discord\message.py:1618              : size=472 B (+472 B), count=1 (+1), average=472 B
+..\discord\state.py:578                 : size=0 B (-472 B), count=0 (-1)
+..\discord\message.py:1626              : size=464 B (+464 B), count=1 (+1), average=464 B
+..\discord\message.py:1827              : size=440 B (+440 B), count=1 (+1), average=440 B
+..\discord\message.py:1620              : size=424 B (+424 B), count=1 (+1), average=424 B
+..\discord\state.py:503                 : size=416 B (+416 B), count=1 (+1), average=416 B
+..\discord\state.py:498                 : size=416 B (+416 B), count=1 (+1), average=416 B
+..\discord\message.py:1813              : size=416 B (+416 B), count=1 (+1), average=416 B
+..\discord\state.py:130                 : size=0 B (-416 B), count=0 (-1)
+..\discord\state.py:125                 : size=0 B (-416 B), count=0 (-1)
+..\discord\state.py:358                 : size=552 B (-64 B), count=2 (-1), average=276 B
+
+state.py traceback stacks:
+Memory allocations for discord\state.py (line 612):
+Allocation: 560.0 B
+Allocation: 312.0 B
+15204.56 KiB - Message processed (len: 2000): 1/5000 - Memory difference: +18640 KiB
+
+
+[ Top 20 differences ]
+..\discord\state.py:370                 : size=480 B (+480 B), count=1 (+1), average=480 B
+..\discord\state.py:1551                : size=424 B (+424 B), count=1 (+1), average=424 B
+..\discord\state.py:1552                : size=416 B (+416 B), count=1 (+1), average=416 B
+..\discord\message.py:1687              : size=2936 B (+328 B), count=15 (+5), average=196 B
+..\discord\state.py:612                 : size=1184 B (+312 B), count=3 (+1), average=395 B
+..\discord\message.py:1627              : size=560 B (+56 B), count=3 (+1), average=187 B
+..\discord\message.py:1614              : size=560 B (+56 B), count=3 (+1), average=187 B
+..\discord\message.py:1613              : size=560 B (+56 B), count=3 (+1), average=187 B
+..\discord\message.py:1615              : size=544 B (+56 B), count=3 (+1), average=181 B
+..\discord\message.py:1857              : size=112 B (+56 B), count=2 (+1), average=56 B
+..\discord\message.py:1849              : size=112 B (+56 B), count=2 (+1), average=56 B
+..\discord\message.py:1833              : size=112 B (+56 B), count=2 (+1), average=56 B
+..\discord\message.py:1610              : size=72 B (+36 B), count=2 (+1), average=36 B
+
+state.py traceback stacks:
+Memory allocations for discord\state.py (line 612):
+Allocation: 560.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+15270.29 KiB - Message processed (len: 2000): 2/5000 - Memory difference: +8396 KiB
+
+
+[ Top 20 differences ]
+..\discord\message.py:1687              : size=3264 B (+328 B), count=20 (+5), average=163 B
+..\discord\state.py:612                 : size=1496 B (+312 B), count=4 (+1), average=374 B
+..\discord\message.py:1627              : size=616 B (+56 B), count=4 (+1), average=154 B
+..\discord\message.py:1614              : size=616 B (+56 B), count=4 (+1), average=154 B
+..\discord\message.py:1613              : size=616 B (+56 B), count=4 (+1), average=154 B
+..\discord\message.py:1615              : size=600 B (+56 B), count=4 (+1), average=150 B
+..\discord\message.py:1857              : size=168 B (+56 B), count=3 (+1), average=56 B
+..\discord\message.py:1849              : size=168 B (+56 B), count=3 (+1), average=56 B
+..\discord\message.py:1833              : size=168 B (+56 B), count=3 (+1), average=56 B
+..\discord\message.py:1610              : size=108 B (+36 B), count=3 (+1), average=36 B
+
+state.py traceback stacks:
+Memory allocations for discord\state.py (line 612):
+Allocation: 560.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+15317.76 KiB - Message processed (len: 2000): 3/5000 - Memory difference: +2388 KiB
+
+
+[ Top 20 differences ]
+..\discord\state.py:612                 : size=1808 B (+312 B), count=5 (+1), average=362 B
+..\discord\message.py:1687              : size=3529 B (+265 B), count=24 (+4), average=147 B
+..\discord\message.py:1627              : size=672 B (+56 B), count=5 (+1), average=134 B
+..\discord\message.py:1614              : size=672 B (+56 B), count=5 (+1), average=134 B
+..\discord\message.py:1613              : size=672 B (+56 B), count=5 (+1), average=134 B
+..\discord\message.py:1615              : size=656 B (+56 B), count=5 (+1), average=131 B
+..\discord\message.py:1857              : size=224 B (+56 B), count=4 (+1), average=56 B
+..\discord\message.py:1849              : size=224 B (+56 B), count=4 (+1), average=56 B
+..\discord\message.py:1833              : size=224 B (+56 B), count=4 (+1), average=56 B
+..\discord\message.py:1610              : size=144 B (+36 B), count=4 (+1), average=36 B
+
+state.py traceback stacks:
+Memory allocations for discord\state.py (line 612):
+Allocation: 560.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+15415.52 KiB - Message processed (len: 2000): 4/5000 - Memory difference: +1068 KiB
+
+
+[ Top 20 differences ]
+..\discord\state.py:612                 : size=2120 B (+312 B), count=6 (+1), average=353 B
+..\discord\message.py:1687              : size=3787 B (+258 B), count=28 (+4), average=135 B
+..\discord\message.py:1627              : size=728 B (+56 B), count=6 (+1), average=121 B
+..\discord\message.py:1614              : size=728 B (+56 B), count=6 (+1), average=121 B
+..\discord\message.py:1613              : size=728 B (+56 B), count=6 (+1), average=121 B
+..\discord\message.py:1615              : size=712 B (+56 B), count=6 (+1), average=119 B
+..\discord\message.py:1857              : size=280 B (+56 B), count=5 (+1), average=56 B
+..\discord\message.py:1849              : size=280 B (+56 B), count=5 (+1), average=56 B
+..\discord\message.py:1833              : size=280 B (+56 B), count=5 (+1), average=56 B
+..\discord\message.py:1610              : size=180 B (+36 B), count=5 (+1), average=36 B
+
+state.py traceback stacks:
+Memory allocations for discord\state.py (line 612):
+Allocation: 560.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+15513.58 KiB - Message processed (len: 2000): 5/5000 - Memory difference: +1005 KiB
+
+
+[ Top 20 differences ]
+..\discord\message.py:1687              : size=4115 B (+328 B), count=33 (+5), average=125 B
+..\discord\state.py:612                 : size=2432 B (+312 B), count=7 (+1), average=347 B
+..\discord\message.py:1627              : size=784 B (+56 B), count=7 (+1), average=112 B
+..\discord\message.py:1614              : size=784 B (+56 B), count=7 (+1), average=112 B
+..\discord\message.py:1613              : size=784 B (+56 B), count=7 (+1), average=112 B
+..\discord\message.py:1615              : size=768 B (+56 B), count=7 (+1), average=110 B
+..\discord\message.py:1857              : size=336 B (+56 B), count=6 (+1), average=56 B
+..\discord\message.py:1849              : size=336 B (+56 B), count=6 (+1), average=56 B
+..\discord\message.py:1833              : size=336 B (+56 B), count=6 (+1), average=56 B
+..\discord\message.py:1610              : size=216 B (+36 B), count=6 (+1), average=36 B
+
+state.py traceback stacks:
+Memory allocations for discord\state.py (line 612):
+Allocation: 560.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+15609.21 KiB - Message processed (len: 1): 6/5000 - Memory difference: +998 KiB
+
+
+[ Top 20 differences ]
+..\discord\state.py:612                 : size=2744 B (+312 B), count=8 (+1), average=343 B
+..\discord\message.py:1687              : size=4310 B (+195 B), count=36 (+3), average=120 B
+..\discord\message.py:1627              : size=840 B (+56 B), count=8 (+1), average=105 B
+..\discord\message.py:1614              : size=840 B (+56 B), count=8 (+1), average=105 B
+..\discord\message.py:1613              : size=840 B (+56 B), count=8 (+1), average=105 B
+..\discord\message.py:1615              : size=824 B (+56 B), count=8 (+1), average=103 B
+..\discord\message.py:1857              : size=392 B (+56 B), count=7 (+1), average=56 B
+..\discord\message.py:1849              : size=392 B (+56 B), count=7 (+1), average=56 B
+..\discord\message.py:1833              : size=392 B (+56 B), count=7 (+1), average=56 B
+..\discord\message.py:1610              : size=252 B (+36 B), count=7 (+1), average=36 B
+
+state.py traceback stacks:
+Memory allocations for discord\state.py (line 612):
+Allocation: 560.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+15706.17 KiB - Message processed (len: 1): 7/5000 - Memory difference: +1068 KiB
+
+
+[ Top 20 differences ]
+..\discord\state.py:612                 : size=3056 B (+312 B), count=9 (+1), average=340 B
+..\discord\message.py:1687              : size=4575 B (+265 B), count=40 (+4), average=114 B
+..\discord\message.py:1627              : size=896 B (+56 B), count=9 (+1), average=100 B
+..\discord\message.py:1614              : size=896 B (+56 B), count=9 (+1), average=100 B
+..\discord\message.py:1613              : size=896 B (+56 B), count=9 (+1), average=100 B
+..\discord\message.py:1615              : size=880 B (+56 B), count=9 (+1), average=98 B
+..\discord\message.py:1857              : size=448 B (+56 B), count=8 (+1), average=56 B
+..\discord\message.py:1849              : size=448 B (+56 B), count=8 (+1), average=56 B
+..\discord\message.py:1833              : size=448 B (+56 B), count=8 (+1), average=56 B
+..\discord\message.py:1610              : size=288 B (+36 B), count=8 (+1), average=36 B
+
+state.py traceback stacks:
+Memory allocations for discord\state.py (line 612):
+Allocation: 560.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+15802.57 KiB - Message processed (len: 1): 8/5000 - Memory difference: +935 KiB
+
+
+[ Top 20 differences ]
+..\discord\state.py:612                 : size=3368 B (+312 B), count=10 (+1), average=337 B
+..\discord\message.py:1687              : size=4840 B (+265 B), count=44 (+4), average=110 B
+..\discord\message.py:1627              : size=952 B (+56 B), count=10 (+1), average=95 B
+..\discord\message.py:1614              : size=952 B (+56 B), count=10 (+1), average=95 B
+..\discord\message.py:1613              : size=952 B (+56 B), count=10 (+1), average=95 B
+..\discord\message.py:1615              : size=936 B (+56 B), count=10 (+1), average=94 B
+..\discord\message.py:1857              : size=504 B (+56 B), count=9 (+1), average=56 B
+..\discord\message.py:1849              : size=504 B (+56 B), count=9 (+1), average=56 B
+..\discord\message.py:1833              : size=504 B (+56 B), count=9 (+1), average=56 B
+..\discord\message.py:1610              : size=324 B (+36 B), count=9 (+1), average=36 B
+
+state.py traceback stacks:
+Memory allocations for discord\state.py (line 612):
+Allocation: 560.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+15900.33 KiB - Message processed (len: 2000): 9/5000 - Memory difference: +1005 KiB
+
+
+[ Top 20 differences ]
+..\discord\message.py:1687              : size=5168 B (+328 B), count=49 (+5), average=105 B
+..\discord\state.py:612                 : size=3680 B (+312 B), count=11 (+1), average=335 B
+..\discord\message.py:1627              : size=1008 B (+56 B), count=11 (+1), average=92 B
+..\discord\message.py:1614              : size=1008 B (+56 B), count=11 (+1), average=92 B
+..\discord\message.py:1613              : size=1008 B (+56 B), count=11 (+1), average=92 B
+..\discord\message.py:1615              : size=992 B (+56 B), count=11 (+1), average=90 B
+..\discord\message.py:1857              : size=560 B (+56 B), count=10 (+1), average=56 B
+..\discord\message.py:1849              : size=560 B (+56 B), count=10 (+1), average=56 B
+..\discord\message.py:1833              : size=560 B (+56 B), count=10 (+1), average=56 B
+..\discord\message.py:1610              : size=360 B (+36 B), count=10 (+1), average=36 B
+
+state.py traceback stacks:
+Memory allocations for discord\state.py (line 612):
+Allocation: 560.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+Allocation: 312.0 B
+15998.49 KiB - Message processed (len: 2000): 10/5000 - Memory difference: +1005 KiB
+
+
