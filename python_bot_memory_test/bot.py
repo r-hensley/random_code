@@ -1,3 +1,5 @@
+# invite: https://discord.com/oauth2/authorize?client_id=1318379376890347562&permissions=68608&redirect_uri=https%3A%2F%2Fdiscordpy.readthedocs.io%2Fen%2Flatest%2Fquickstart.html&integration_type=0&scope=bot
+
 # This is going to be a basic bot which will be used to test the memory usage of the bot.
 # Specifically, the message cache and how much a larger max_messages setting will affect the bot.
 # Start a tracemalloc session at the very beginning, and then output the memory usage as the message_cache fills.
