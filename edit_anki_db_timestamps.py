@@ -2,11 +2,26 @@ import sqlite3
 from datetime import timezone, datetime, timedelta
 import pytz
 
+# How to use
+# 1) Scroll down to find "offset" variable and set that properly
+# 2) Let code make a backup of the database first if necessary
+# 3) Start the rest of the code with restoring *from* backup each time
+# 4) Make sure code ends with "finished" comment at end of console
+
+# Nothing here should need to be touched
 pacific_tz = pytz.timezone('America/Los_Angeles')
+japan_tz = pytz.timezone("Asia/Tokyo")
+now = datetime.now()
+pacific_now = now.astimezone(pacific_tz)
+japan_now = now.astimezone(japan_tz)
+hours_difference = (japan_now.utcoffset().total_seconds() - pacific_now.utcoffset().total_seconds()) / 3600
+print(f"Calculated Japan-CA difference is {hours_difference} hours")
 fixed_timezone = timezone(timedelta(hours=-8))
-japan_to_us_offset = 16 * 60 * 60 * 1000  # move all timestamps by 16 hours (came back from Japan to US)
-us_to_japan_offset = -japan_to_us_offset
-offset = us_to_japan_offset
+
+japan_to_us_offset = hours_difference * 60 * 60 * 1000  # move all timestamps by 16/17 hours (going from Japan --> CA)
+us_to_japan_offset = -japan_to_us_offset  # use if going CA --> Japan
+offset = japan_to_us_offset  # SET THIS LINE PROPERLY
+print(f"Using {offset / 60 / 60 / 1000} hour offset.")
 offset = offset + 1  #  i was getting a UNIQUE constraint failed: revlog.id error, so this makes it work
 # lower_range = 1722750615000  # august 3rd
 # upper_range = 1729013415000  # october 17th
@@ -17,15 +32,30 @@ upper_range = 99999999999999
 db_path = 'C:\\Users\\ryry0\\AppData\\Roaming\\Anki2\\1) Ryan\\collection.anki2'
 backup = 'C:\\Users\\ryry0\\AppData\\Roaming\\Anki2\\1) Ryan\\collection_backup.anki2'
 
-# first, overwrite the main database with the backup
+# make backup if necessary before changing anything
 if False:
+    # open main database
+    with open(db_path, 'rb') as f:
+        data = f.read()
+        
+    # write to backup
+    with open(backup, 'wb') as f:
+        f.write(data)
+
+# first, overwrite the main database with the backup
+# this is for if you're testing multiple times
+if False:
+    # read backup
     with open(backup, 'rb') as f:
         backup_data = f.read()
 
+    # write to main db file
     with open(db_path, 'wb') as f:
         f.write(backup_data)
 
-# raise Exception("This is a test")
+# can enable the below exit with above backup restore if you want to just restore backup
+exit("Exiting after restoring backup")
+# comment out above exit after you're sure you want to continue
 
 # Connect to the SQLite database
 conn = sqlite3.connect(db_path)
