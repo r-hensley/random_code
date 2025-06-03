@@ -19,6 +19,7 @@ import pytz
 pacific_tz = pytz.timezone('America/Los_Angeles')
 japan_tz = pytz.timezone("Asia/Tokyo")
 chicago_tz = pytz.timezone("America/Chicago")
+taiwan_tz = pytz.timezone("Asia/Taipei")
 fixed_timezone = timezone(timedelta(hours=-8))
 
 now = datetime.now()
@@ -31,8 +32,8 @@ now = datetime.now()
 # #########################
 # #########################
 # SET THESE LINES PROPERLY
-START_TZ = pacific_tz
-END_TZ = chicago_tz
+START_TZ = taiwan_tz
+END_TZ = pacific_tz
 # #########################
 # #########################
 
@@ -57,8 +58,14 @@ offset_seconds = offset_seconds + 1  #  i was getting a UNIQUE constraint failed
 # upper_range = 1729013415000  # october 17th
 # upper_range = 1741536000000  # Sunday, March 9, 2025 11:00:00 AM GMT-05:00
 # https://www.epochconverter.com/
-lower_range = 1
-upper_range = 9999999999999
+max_timestamp = 5999999999
+lower_range = 0
+upper_range = max_timestamp
+# assert that you're using ms and not seconds
+if lower_range < 10_000_000_000:
+    lower_range *= 1000  # convert to milliseconds
+if upper_range < 10_000_000_000:
+    upper_range *= 1000  # convert to milliseconds
 
 # Path to your Anki collection database file (modify the path as needed)
 db_path = 'C:\\Users\\ryry0\\AppData\\Roaming\\Anki2\\1) Ryan\\collection.anki2'
@@ -78,7 +85,7 @@ if False:
 
 # first, overwrite the main database with the backup
 # this is for if you're testing multiple times
-if False:
+if True:
     # read backup
     with open(backup, 'rb') as f:
         backup_data = f.read()
@@ -90,7 +97,7 @@ if False:
     print("[SUCCESS] Restored from backup")
 
 # can enable the below exit with above backup restore if you want to just restore backup
-exit("Exiting after restoring backup")
+# exit("Exiting after restoring backup")
 # comment out above exit after you're sure you want to continue
 
 # Connect to the SQLite database
@@ -109,10 +116,11 @@ else:
     print("No need to shift timestamps.")
 
 # Query to get the list of IDs (timestamps) from the revlog table
-cursor.execute("SELECT id FROM revlog ORDER BY id ASC")
+cursor.execute(f"SELECT id FROM revlog WHERE id > {lower_range} AND id < {upper_range} ORDER BY id ASC ")
 
 # Fetch all the results (this will be a list of tuples)
 timestamps = cursor.fetchall()
+print(f"Found {len(timestamps)} timestamps in the specified range.")
 
 
 # Convert list of tuples to a list of integers (IDs)
@@ -125,15 +133,14 @@ conn.close()
 local_time_timestamps = []
 utc_time_timestamps = []
 print_counter = 0
-for ts in timestamp_ids[::-1]:  # Converting only the first 10 to make it manageable
+# Converting only the first and last 10 to make it manageable
+for ts in timestamp_ids[:10][::-1] + timestamp_ids[-10:][::-1]:
     # Convert from milliseconds to seconds and create a datetime object
     dt = datetime.fromtimestamp(ts / 1000, tz=timezone.utc)
     utc_time_timestamps.append(dt)
     local_dt = dt.astimezone(END_TZ)
     local_time_timestamps.append(local_dt)
-    if print_counter < 10:
-        print(f"ts: {ts}: {dt} -> {local_dt}")
-    print_counter += 1
+    print(f"ts: {ts}: {dt} -> {local_dt}")
 
 # Print the first few timestamp IDs in local time
 print("Last few timestamp IDs in local time:")
